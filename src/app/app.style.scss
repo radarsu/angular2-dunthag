@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('/assets/css/r-lib.css');
+
+body,
+html {
+    font-size: 16px;
+    background: url('/assets/img/bg-full.jpg');
+    background-position: 50% 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* helpers */
+.r-max-width-256 {
+    max-width: 256px;
+}
+
+.r-bigger {
+    width: 54px;
+    height: 54px;
+}
+
+.r-big {
+    width: 48px;
+    height: 48px;
+}
+
+.r-text-big {
+    font-size: 150%;
+}
+
+.r-text-no-wrap {
+    white-space: nowrap;
+}
+
+.r-no-margin {
+    margin: 0;
+}
+
+.r-no-margin-x {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.r-no-padding {
+    padding: 0;
+}
+
+.r-opacity {
+    opacity: 0.5;
+}
+
+.r-padding-mini {
+    padding: 4px;
+}
+
+.r-overflow-visible {
+    overflow: visible;
+}
+
+.r-panel {
+    background: rgba(0, 0, 0, .8);
+    padding: 1vh 2vw;
+}
+/*
+.r-center-transform {
+    position: absolute;
+    max-height: 100%;
+    top: 49.99%;
+    left: 49.99%;
+    -webkit-transform: translate(-50.01%, -50.01%);
+    transform: translate(-50.01%, -50.01%);
+}
+*/
+.r-no-bg {
+    background: none;
+}
+
+.r-layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* FIX CHROME AUTOCOMPLETE */
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0 1000px black inset, 0 0 8px rgba(0, 0, 0, .8) !important;
+    -webkit-text-fill-color: rgb(200, 200, 200) !important;
+    transition: background-color 9999s ease-in-out 0s !important;
+    border: none !important;
+    outline: none !important;
+}
+/* override mdl, sticky footer */
+.mdl-layout__content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.mdl-textfield__input {
+    background: rgba(0, 0, 0, .8);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

@@ -1,0 +1,17 @@
+<centered-panel>
+    <div class="r-divider-light"></div>
+    <h2 class="r-text-center r-text-no-wrap">Wybierz postać</h2>
+    <div class="r-text-center">
+        <div class="r-inline-block character" *ngFor="let character of user.characters">
+            {{character.name}}
+        </div>
+    </div>
+    <!-- Colored raised button -->
+    <div class="mdl-grid r-no-padding r-space-between r-max-width-256">
+        <button class="r-full-width r-no-margin-x mdl-cell mdl-cell--6-col mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" (click)="characterCreate()">
+            Stwórz nową postać
+        </button>
+    </div>
+    <div class="r-divider-light"></div>
+    <version-footer></version-footer>
+</centered-panel>
